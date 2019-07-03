@@ -1,6 +1,6 @@
 #include "Module.h"
 
-Module::Module(bool startEnabled) : _startEnabled(startEnabled)
+Module::Module(bool startEnabled) : _startEnabled(startEnabled), _isActive(startEnabled)
 {
 
 }
@@ -28,4 +28,19 @@ bool Module::Update()
 bool Module::LateUpdate()
 {
 	return true;
+}
+
+bool Module::CleanUp()
+{
+	return true;
+}
+
+bool Module::IsActive() const
+{
+	return _isActive;
+}
+
+const char*  Module::GetName() const
+{
+	return _name.c_str();
 }

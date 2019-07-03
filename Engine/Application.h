@@ -16,7 +16,6 @@ public:
 	bool CleanUp();
 
 private:
-	UpdateStatus LateUpdate();
 
 	void AddModule(Module* module);
 private:

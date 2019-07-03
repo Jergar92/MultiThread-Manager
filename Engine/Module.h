@@ -11,9 +11,13 @@ public:
 	virtual bool Start();
 	virtual bool Update();
 	virtual bool LateUpdate();
+	virtual bool CleanUp();
 
+	bool IsActive()const;
+	const char* GetName() const;
 protected:
 	bool _startEnabled = true;
+	bool _isActive = false;
 	std::string _name;
 };
 

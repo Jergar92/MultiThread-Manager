@@ -18,14 +18,14 @@ int main(int argc, char *argv[])
 	EngineStatus status = EngineStatus::ENGINE_CREATION;
 
 	Application* App = nullptr;
-
+	
 	while (status != EngineStatus::ENGINE_EXIT)
 	{
 
 		switch (status)
 		{
 		case EngineStatus::ENGINE_CREATION:
-
+			LOG("ENGINE_CREATION success");
 			App = new Application();
 			status = EngineStatus::ENGINE_START;
 
@@ -33,13 +33,21 @@ int main(int argc, char *argv[])
 		case EngineStatus::ENGINE_START:
 			if (!App->Awake())
 			{
+				LOG("ENGINE_START fail on Awake");
+
 				status = EngineStatus::ENGINE_EXIT;
+				break;
 			}
 
 			if (!App->Start())
 			{
+				LOG("ENGINE_START fail on Start");
+
 				status = EngineStatus::ENGINE_EXIT;
+				break;
 			}
+			LOG("ENGINE_START success");
+
 			status = EngineStatus::ENGINE_UPDATE;
 
 			break;
@@ -49,9 +57,11 @@ int main(int argc, char *argv[])
 			switch (updateStatus)
 			{
 			case UPDATE_ERROR:
+				LOG("ENGINE_UPDATE exit with error");
 				status = ENGINE_EXIT;
 				break;
 			case UPDATE_STOP:
+				LOG("ENGINE_UPDATE exit with success");
 				status = ENGINE_FINISH;
 				break;
 			}
@@ -64,6 +74,8 @@ int main(int argc, char *argv[])
 			}
 			else
 			{
+				LOG("ENGINE_FINISH exit with error on CleanUp");
+
 				//ERROR
 			}
 			status = ENGINE_EXIT;
@@ -74,5 +86,6 @@ int main(int argc, char *argv[])
 		}
 	}
 	RELEASE(App);
+
 	return mainReturn;
 }
