@@ -2,6 +2,7 @@
 #define _MODULE_INPUT
 #include "Module.h"
 #include "Globals.h"
+#include <list>
 enum KeyState
 {
 	KEY_IDLE = 0,
@@ -9,6 +10,10 @@ enum KeyState
 	KEY_REPEAT,
 	KEY_UP
 };
+//Forward declarations
+typedef struct _SDL_GameController SDL_GameController;
+typedef struct _SDL_Joystick SDL_Joystick;
+typedef struct _SDL_Haptic SDL_Haptic;
 
 class ModuleInput :
 	public Module
@@ -20,15 +25,23 @@ public:
 	bool Awake();
 	UpdateStatus InputUpdate();
 	bool CleanUp();
-	static ModuleInput* GetInstance(bool enabled = true)
-	{
-		if (_instance == nullptr)
-		{
-			_instance = new ModuleInput(enabled);
-		}
-		return _instance;
-	}
+
 private:
+	void UpdateKeyboardKeys();
+	void UpdateMouseKeys();
+private:
+
+
+	struct GamePad
+	{
+		bool Empty();
+		void Clear();
+		SDL_GameController* controller = nullptr;
+		SDL_Joystick* joystick = NULL;
+		SDL_Haptic* haptic = NULL;
+		int id = -1;
+	};
+
 	int mouseX = 0;
 	int mouseY = 0;
 	int mouseZ = 0;
@@ -37,7 +50,10 @@ private:
 
 	KeyState* keyboardKeys = nullptr;
 	KeyState* mouseKeys = nullptr;
-	static ModuleInput* _instance;
+	std::list<GamePad*> gamePads;
+	
 
+	int gamePadsLimit = 4;
 };
+
 #endif //_MODULE_INPUT

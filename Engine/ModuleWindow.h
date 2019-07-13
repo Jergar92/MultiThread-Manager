@@ -10,14 +10,6 @@ public:
 	ModuleWindow(bool startEnabled = true);
 	virtual ~ModuleWindow();
 
-	static ModuleWindow* GetInstance(bool enabled = true)
-	{
-		if (_instance == nullptr)
-		{
-			_instance = new ModuleWindow(enabled);
-		}
-		return _instance;
-	}
 	bool Awake();
 private:
 	void GetDesktopResolution();
@@ -27,7 +19,6 @@ public:
 private:
 
 
-	static ModuleWindow* _instance;
 	int width = 0;
 	int height = 0;
 	std::string windowTitle;

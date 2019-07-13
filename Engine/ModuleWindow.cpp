@@ -2,7 +2,6 @@
 #include "Globals.h"
 #include "SDL.h"
 
-ModuleWindow* ModuleWindow::_instance = nullptr;
 
 ModuleWindow::ModuleWindow(bool startEnabled):Module(startEnabled)
 {

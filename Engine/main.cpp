@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		{
 		case EngineStatus::ENGINE_CREATION:
 			LOG("ENGINE_CREATION success");
-			App = new Application();
+			App = Application::GetInstance();
 			status = EngineStatus::ENGINE_START;
 
 			break;

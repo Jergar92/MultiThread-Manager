@@ -3,10 +3,16 @@
 #include "ModuleWindow.h"
 #include "ModuleInput.h"
 
+
+Application* Application::_instance = nullptr;
+
 Application::Application()
 {
-	AddModule(ModuleWindow::GetInstance());
-	AddModule(ModuleInput::GetInstance());
+	moduleInput = new ModuleInput(true);
+	AddModule(moduleInput);
+
+	moduleWindow = new ModuleWindow(true);
+	AddModule(moduleWindow);
 
 }
 
@@ -48,7 +54,7 @@ bool Application::Start()
 UpdateStatus Application::Update()
 {
 
-	UpdateStatus inputStatus = ModuleInput::GetInstance()->InputUpdate();
+	UpdateStatus inputStatus = moduleInput->InputUpdate();
 	if (inputStatus != UpdateStatus::UPDATE_CONTINUE)
 		return inputStatus;
 	for (Module* module : _modules)
@@ -81,6 +87,16 @@ bool Application::CleanUp()
 }
 
 
+
+ModuleInput * Application::GetModuleInput()
+{
+	return moduleInput;
+}
+
+ModuleWindow * Application::GetModuleWindow()
+{
+	return moduleWindow;
+}
 
 void Application::AddModule(Module * module)
 {
