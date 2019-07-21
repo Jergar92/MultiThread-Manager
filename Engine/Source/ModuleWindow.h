@@ -11,6 +11,8 @@ public:
 	virtual ~ModuleWindow();
 
 	bool Awake();
+	int GetWidth() const;
+	int GetHeight() const;
 private:
 	void GetDesktopResolution();
 public:

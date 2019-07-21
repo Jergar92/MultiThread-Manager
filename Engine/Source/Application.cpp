@@ -2,6 +2,7 @@
 #include "Module.h"
 #include "ModuleWindow.h"
 #include "ModuleInput.h"
+#include "ModuleRender.h"
 
 
 Application* Application::_instance = nullptr;
@@ -14,6 +15,9 @@ Application::Application()
 	moduleWindow = new ModuleWindow(true);
 	AddModule(moduleWindow);
 
+
+	moduleRender = new ModuleRender(true);
+	AddModule(moduleRender);
 }
 
 
@@ -53,30 +57,18 @@ bool Application::Start()
 
 UpdateStatus Application::Update()
 {
+	   	
+	if (ProccesInput() != UpdateStatus::UPDATE_CONTINUE)
+		return lastStatus;
 
-	UpdateStatus inputStatus = moduleInput->InputUpdate();
-	if (inputStatus != UpdateStatus::UPDATE_CONTINUE)
-		return inputStatus;
-	for (Module* module : _modules)
-	{
-		if (!module->IsActive())
-			continue;
+	if (GameLogic() != UpdateStatus::UPDATE_CONTINUE)
+		return lastStatus;
 
-		if(!module->Update())
-			return UpdateStatus::UPDATE_ERROR;
+	if (Render() != UpdateStatus::UPDATE_CONTINUE)
+		return lastStatus;
 
-	}
+	
 
-
-	for (Module* module : _modules)
-	{
-		if (!module->IsActive())
-			continue;
-
-		if (!module->LateUpdate())
-			return UpdateStatus::UPDATE_ERROR;
-
-	}
 
 	return UpdateStatus::UPDATE_CONTINUE;
 }
@@ -96,6 +88,27 @@ ModuleInput * Application::GetModuleInput()
 ModuleWindow * Application::GetModuleWindow()
 {
 	return moduleWindow;
+}
+
+ModuleRender * Application::GetModuleRender()
+{
+	return moduleRender;
+}
+
+UpdateStatus Application::ProccesInput()
+{
+	lastStatus = moduleInput->InputUpdate();
+	return lastStatus;
+}
+
+UpdateStatus Application::GameLogic()
+{
+	return lastStatus;
+}
+
+UpdateStatus Application::Render()
+{
+	return lastStatus;
 }
 
 void Application::AddModule(Module * module)

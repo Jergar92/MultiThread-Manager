@@ -20,16 +20,6 @@ bool Module::Start()
 	return true;
 }
 
-bool Module::Update()
-{
-	return true;
-}
-
-bool Module::LateUpdate()
-{
-	return true;
-}
-
 bool Module::CleanUp()
 {
 	return true;

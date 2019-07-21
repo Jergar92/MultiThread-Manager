@@ -51,6 +51,16 @@ bool ModuleWindow::Awake()
 	return true;
 }
 
+int ModuleWindow::GetWidth() const
+{
+	return width;
+}
+
+int ModuleWindow::GetHeight() const
+{
+	return height;
+}
+
 void ModuleWindow::GetDesktopResolution()
 {
 	RECT desktop;

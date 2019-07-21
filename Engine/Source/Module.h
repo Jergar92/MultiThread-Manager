@@ -9,8 +9,7 @@ public:
 
 	virtual bool Awake();
 	virtual bool Start();
-	virtual bool Update();
-	virtual bool LateUpdate();
+
 	virtual bool CleanUp();
 
 	bool IsActive()const;
