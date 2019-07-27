@@ -6,7 +6,7 @@ class Module;
 class ModuleInput;
 class ModuleWindow;
 class ModuleRender;
-
+class ModuleGame;
 class Application
 {
 public:
@@ -29,7 +29,7 @@ public:
 	ModuleInput* GetModuleInput();
 	ModuleWindow* GetModuleWindow();
 	ModuleRender* GetModuleRender();
-
+	ModuleGame* GetModuleGame();
 private:
 	UpdateStatus ProccesInput();
 	UpdateStatus GameLogic();
@@ -43,7 +43,7 @@ private:
 	ModuleInput* moduleInput = nullptr;
 	ModuleWindow* moduleWindow = nullptr;
 	ModuleRender* moduleRender = nullptr;
-
+	ModuleGame* moduleGame = nullptr;
 	UpdateStatus lastStatus = UpdateStatus::UPDATE_CONTINUE;
 	static Application* _instance;
 

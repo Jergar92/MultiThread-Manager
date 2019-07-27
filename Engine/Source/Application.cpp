@@ -2,6 +2,7 @@
 #include "Module.h"
 #include "ModuleWindow.h"
 #include "ModuleInput.h"
+#include "ModuleGame.h"
 #include "ModuleRender.h"
 
 
@@ -15,6 +16,8 @@ Application::Application()
 	moduleWindow = new ModuleWindow(true);
 	AddModule(moduleWindow);
 
+	moduleGame = new ModuleGame(true);
+	AddModule(moduleGame);
 
 	moduleRender = new ModuleRender(true);
 	AddModule(moduleRender);
@@ -75,10 +78,15 @@ UpdateStatus Application::Update()
 
 bool Application::CleanUp()
 {
+	for (Module* module : _modules)
+	{
+		if (!module->CleanUp())
+		{
+			return false;
+		}
+	}
 	return true;
 }
-
-
 
 ModuleInput * Application::GetModuleInput()
 {
@@ -95,6 +103,11 @@ ModuleRender * Application::GetModuleRender()
 	return moduleRender;
 }
 
+ModuleGame * Application::GetModuleGame()
+{
+	return moduleGame;
+}
+
 UpdateStatus Application::ProccesInput()
 {
 	lastStatus = moduleInput->InputUpdate();
@@ -103,11 +116,18 @@ UpdateStatus Application::ProccesInput()
 
 UpdateStatus Application::GameLogic()
 {
+	lastStatus = moduleGame->GameUpdate();
+
 	return lastStatus;
 }
 
 UpdateStatus Application::Render()
 {
+	if (!moduleRender->Render())
+	{
+		lastStatus = UpdateStatus::UPDATE_ERROR;
+		return lastStatus;
+	}
 	return lastStatus;
 }
 
