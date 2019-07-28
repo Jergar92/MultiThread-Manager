@@ -105,12 +105,14 @@ void Clock::Sleep(int milliseconds)
 	::Sleep(milliseconds);
 #elif !defined(__native_client__) && !defined(EMSCRIPTEN)
 	// http://linux.die.net/man/2/nanosleep
+	/*
 	timespec ts;
 	ts.tv_sec = milliseconds / 1000;
 	ts.tv_nsec = (milliseconds - ts.tv_sec * 1000) * 1000 * 1000;
 	int ret = nanosleep(&ts, NULL);
 	if (ret == -1)
 		LOGI("nanosleep returned -1! Reason: %s(%d).", strerror(errno), (int)errno);
+	*/
 #else
 #warning Clock::Sleep has not been implemented!
 #endif
@@ -248,7 +250,8 @@ tick_t Clock::Tick()
 	gettimeofday(&t, NULL);
 	return (tick_t)t.tv_sec * 1000 * 1000 + (tick_t)t.tv_usec;
 #else
-	return (tick_t)clock();
+	return 0;
+//	return (tick_t)clock();
 #endif
 }
 
@@ -281,14 +284,16 @@ tick_t Clock::TicksPerSec()
 #elif defined(_POSIX_C_SOURCE) || defined(__APPLE__)
 	return 1000 * 1000;
 #else
-	return CLOCKS_PER_SEC;
+	return 1000 * 1000;
+//	return CLOCKS_PER_SEC;
 #endif
 }
 
 unsigned long long Clock::Rdtsc()
 {
 #if defined(_MSC_VER) && !defined(WIN8PHONE)
-	return __rdtsc();
+	return Clock::Tick();
+	//return __rdtsc();
 #elif defined(__x86_64__)
 	unsigned hi, lo;
 	__asm__ __volatile__ ("rdtsc" : "=a"(lo), "=d"(hi));

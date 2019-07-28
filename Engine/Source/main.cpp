@@ -3,6 +3,7 @@
 #include "Globals.h"
 #include "Defines.h"
 #include "SDL.h"
+
 enum EngineStatus
 {
 	ENGINE_CREATION,

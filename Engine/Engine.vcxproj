@@ -19,17 +19,201 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ExternalLibraries\GLEW\include\GL\eglew.h" />
+    <ClInclude Include="ExternalLibraries\GLEW\include\GL\glew.h" />
+    <ClInclude Include="ExternalLibraries\GLEW\include\GL\glxew.h" />
+    <ClInclude Include="ExternalLibraries\GLEW\include\GL\wglew.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Algorithm\Random\LCG.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\AABB.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\AABB2D.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Capsule.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Circle.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Frustum.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\GeometryAll.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\GeomType.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\HitInfo.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\KDTree.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Line.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\LineSegment.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\OBB.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\PBVolume.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Plane.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Polygon.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Polyhedron.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\QuadTree.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Ray.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Sphere.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Triangle.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\TriangleMesh.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\MathBuildConfig.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\MathGeoLib.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\MathGeoLibFwd.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\assume.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\BitOps.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\Complex.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\CoordinateAxisConvention.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\FixedPoint.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float2.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float3.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float3x3.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float3x4.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4x4.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4x4_neon.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4x4_sse.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4_neon.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4_sse.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\FloatCmp.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathAll.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathConstants.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathFunc.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathLog.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathNamespace.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathTypes.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MatrixProxy.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\myassert.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\Polynomial.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\Quat.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\quat_simd.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\Rect.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\Reinterpret.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\SSEMath.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\sse_mathfun.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\TransformOps.h" />
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Time\Clock.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\begin_code.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\close_code.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_assert.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_atomic.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_audio.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_bits.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_blendmode.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_clipboard.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_android.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_iphoneos.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_macosx.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_minimal.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_pandora.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_psp.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_windows.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_winrt.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_wiz.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_copying.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_cpuinfo.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_egl.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_endian.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_error.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_events.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_filesystem.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_gamecontroller.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_gesture.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_haptic.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_hints.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_joystick.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_keyboard.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_keycode.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_loadso.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_log.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_main.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_messagebox.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_mouse.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_mutex.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_name.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengl.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles2.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles2_gl2.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles2_gl2ext.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles2_gl2platform.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles2_khrplatform.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengl_glext.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_pixels.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_platform.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_power.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_quit.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_rect.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_render.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_revision.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_rwops.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_scancode.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_sensor.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_shape.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_stdinc.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_surface.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_system.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_syswm.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_assert.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_common.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_compare.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_crc32.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_font.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_fuzzer.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_harness.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_images.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_log.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_md5.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_memory.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_random.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_thread.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_timer.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_touch.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_types.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_version.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_video.h" />
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_vulkan.h" />
     <ClInclude Include="Source\Application.h" />
     <ClInclude Include="Source\Defines.h" />
+    <ClInclude Include="Source\GamePadController.h" />
     <ClInclude Include="Source\Globals.h" />
+    <ClInclude Include="Source\InputController.h" />
+    <ClInclude Include="Source\InputEnum.h" />
+    <ClInclude Include="Source\KeyboardController.h" />
     <ClInclude Include="Source\Module.h" />
     <ClInclude Include="Source\ModuleGame.h" />
     <ClInclude Include="Source\ModuleInput.h" />
     <ClInclude Include="Source\ModuleRender.h" />
     <ClInclude Include="Source\ModuleWindow.h" />
+    <ClInclude Include="Source\MouseController.h" />
+    <ClInclude Include="Source\OrbitalCamera.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Algorithm\Random\LCG.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\AABB.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Capsule.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Circle.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Frustum.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Line.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\LineSegment.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\OBB.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Plane.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Polygon.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Polyhedron.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Ray.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Sphere.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Triangle.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\TriangleMesh.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\BitOps.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float2.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float3.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float3x3.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float3x4.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float4.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float4x4.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\MathFunc.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\MathLog.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\MathOps.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\Polynomial.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\Quat.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\SSEMath.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\TransformOps.cpp" />
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Time\Clock.cpp" />
     <ClCompile Include="Source\Application.cpp" />
+    <ClCompile Include="Source\GamePadController.cpp" />
+    <ClCompile Include="Source\InputController.cpp" />
+    <ClCompile Include="Source\KeyboardController.cpp" />
     <ClCompile Include="Source\Log.cpp" />
     <ClCompile Include="Source\main.cpp" />
     <ClCompile Include="Source\Module.cpp" />
@@ -37,6 +221,26 @@
     <ClCompile Include="Source\ModuleInput.cpp" />
     <ClCompile Include="Source\ModuleRender.cpp" />
     <ClCompile Include="Source\ModuleWindow.cpp" />
+    <ClCompile Include="Source\MouseController.cpp" />
+    <ClCompile Include="Source\OrbitalCamera.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ExternalLibraries\GLEW\doc\advanced.html" />
+    <None Include="ExternalLibraries\GLEW\doc\basic.html" />
+    <None Include="ExternalLibraries\GLEW\doc\build.html" />
+    <None Include="ExternalLibraries\GLEW\doc\credits.html" />
+    <None Include="ExternalLibraries\GLEW\doc\glew.html" />
+    <None Include="ExternalLibraries\GLEW\doc\glxew.html" />
+    <None Include="ExternalLibraries\GLEW\doc\index.html" />
+    <None Include="ExternalLibraries\GLEW\doc\install.html" />
+    <None Include="ExternalLibraries\GLEW\doc\log.html" />
+    <None Include="ExternalLibraries\GLEW\doc\wglew.html" />
+    <None Include="ExternalLibraries\MathGeoLib\Geometry\KDTree.inl" />
+    <None Include="ExternalLibraries\MathGeoLib\Geometry\QuadTree.inl" />
+    <None Include="ExternalLibraries\MathGeoLib\Geometry\TriangleMesh_IntersectRay_AVX.inl" />
+    <None Include="ExternalLibraries\MathGeoLib\Geometry\TriangleMesh_IntersectRay_CPP.inl" />
+    <None Include="ExternalLibraries\MathGeoLib\Geometry\TriangleMesh_IntersectRay_SSE.inl" />
+    <None Include="ExternalLibraries\MathGeoLib\Math\Matrix.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -110,7 +314,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>./ExternalLibraries/GLEW/include;./ExternalLibraries/SDL2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./ExternalLibraries/MathGeoLib;./ExternalLibraries/GLEW/include;./ExternalLibraries/SDL2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,7 +349,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>./ExternalLibraries/GLEW/include;./ExternalLibraries/SDL2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./ExternalLibraries/MathGeoLib;./ExternalLibraries/GLEW/include;./ExternalLibraries/SDL2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>

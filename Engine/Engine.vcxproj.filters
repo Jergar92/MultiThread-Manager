@@ -16,6 +16,12 @@
     <Filter Include="Header Files\Globals">
       <UniqueIdentifier>{9d00ce5f-0077-4581-849c-3ad9cf27f4b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\InputController">
+      <UniqueIdentifier>{8d28f10d-c2a6-4c66-ba7d-94e0dd7c2c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\InputController">
+      <UniqueIdentifier>{8df45c9f-6506-4760-9bba-74fa2ce522d7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Module.h">
@@ -41,6 +47,459 @@
     </ClInclude>
     <ClInclude Include="Source\ModuleGame.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\GLEW\include\GL\eglew.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\GLEW\include\GL\glew.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\GLEW\include\GL\glxew.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\GLEW\include\GL\wglew.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Algorithm\Random\LCG.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\AABB.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\AABB2D.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Capsule.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Circle.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Frustum.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\GeometryAll.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\GeomType.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\HitInfo.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\KDTree.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Line.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\LineSegment.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\OBB.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\PBVolume.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Plane.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Polygon.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Polyhedron.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\QuadTree.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Ray.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Sphere.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\Triangle.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Geometry\TriangleMesh.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\assume.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\BitOps.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\Complex.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\CoordinateAxisConvention.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\FixedPoint.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float2.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float3.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float3x3.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float3x4.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4x4.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4x4_neon.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4x4_sse.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4_neon.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\float4_sse.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\FloatCmp.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathAll.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathConstants.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathFunc.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathLog.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathNamespace.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MathTypes.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\MatrixProxy.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\myassert.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\Polynomial.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\Quat.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\quat_simd.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\Rect.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\Reinterpret.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\SSEMath.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\sse_mathfun.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Math\TransformOps.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\MathBuildConfig.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\MathGeoLib.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\MathGeoLibFwd.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\MathGeoLib\Time\Clock.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\begin_code.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\close_code.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_assert.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_atomic.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_audio.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_bits.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_blendmode.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_clipboard.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_android.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_iphoneos.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_macosx.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_minimal.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_pandora.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_psp.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_windows.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_winrt.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_config_wiz.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_copying.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_cpuinfo.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_egl.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_endian.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_error.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_events.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_filesystem.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_gamecontroller.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_gesture.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_haptic.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_hints.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_joystick.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_keyboard.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_keycode.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_loadso.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_log.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_main.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_messagebox.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_mouse.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_mutex.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_name.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengl.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles2.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles2_gl2.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles2_gl2ext.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles2_gl2platform.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengles2_khrplatform.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_opengl_glext.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_pixels.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_platform.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_power.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_quit.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_rect.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_render.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_revision.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_rwops.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_scancode.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_sensor.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_shape.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_stdinc.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_surface.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_system.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_syswm.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_assert.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_common.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_compare.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_crc32.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_font.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_fuzzer.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_harness.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_images.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_log.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_md5.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_memory.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_test_random.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_thread.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_timer.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_touch.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_types.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_version.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_video.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries\SDL2\include\SDL_vulkan.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\KeyboardController.h">
+      <Filter>Header Files\InputController</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GamePadController.h">
+      <Filter>Header Files\InputController</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InputController.h">
+      <Filter>Header Files\InputController</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MouseController.h">
+      <Filter>Header Files\InputController</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InputEnum.h">
+      <Filter>Header Files\InputController</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\OrbitalCamera.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -68,5 +527,160 @@
     <ClCompile Include="Source\ModuleGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Algorithm\Random\LCG.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\AABB.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Capsule.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Circle.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Frustum.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Line.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\LineSegment.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\OBB.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Plane.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Polygon.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Polyhedron.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Ray.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Sphere.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\Triangle.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Geometry\TriangleMesh.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\BitOps.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float2.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float3.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float3x3.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float3x4.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float4.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\float4x4.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\MathFunc.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\MathLog.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\MathOps.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\Polynomial.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\Quat.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\SSEMath.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Math\TransformOps.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries\MathGeoLib\Time\Clock.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GamePadController.cpp">
+      <Filter>Source Files\InputController</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InputController.cpp">
+      <Filter>Source Files\InputController</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\KeyboardController.cpp">
+      <Filter>Source Files\InputController</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MouseController.cpp">
+      <Filter>Source Files\InputController</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OrbitalCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ExternalLibraries\GLEW\doc\advanced.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\GLEW\doc\basic.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\GLEW\doc\build.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\GLEW\doc\credits.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\GLEW\doc\glew.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\GLEW\doc\glxew.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\GLEW\doc\index.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\GLEW\doc\install.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\GLEW\doc\log.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\GLEW\doc\wglew.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\MathGeoLib\Geometry\KDTree.inl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\MathGeoLib\Geometry\QuadTree.inl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\MathGeoLib\Geometry\TriangleMesh_IntersectRay_AVX.inl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\MathGeoLib\Geometry\TriangleMesh_IntersectRay_CPP.inl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\MathGeoLib\Geometry\TriangleMesh_IntersectRay_SSE.inl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ExternalLibraries\MathGeoLib\Math\Matrix.inl">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
