@@ -15,13 +15,7 @@ ModuleRender::~ModuleRender()
 
 bool ModuleRender::Awake()
 {
-	context = SDL_GL_CreateContext(GetModuleWindowWindow());
 	
-	if (context == NULL)
-	{
-		LOG("OpenGL context could not be created! SDL_Error: %s\n", SDL_GetError());
-		return false;
-	}	
 	
 	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
 	glClearDepth(1.0f);
@@ -36,7 +30,6 @@ bool ModuleRender::Awake()
 	glEnable(GL_COLOR_MATERIAL);
 	glEnable(GL_TEXTURE_2D);
 
-	OnResize(Application::GetInstance()->GetModuleWindow()->GetWidth(), Application::GetInstance()->GetModuleWindow()->GetHeight());
 	return true;
 }
 
@@ -44,8 +37,14 @@ bool ModuleRender::Render()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	SDL_GL_SwapWindow(GetModuleWindowWindow());
+	SDL_GL_SwapWindow(window);
 
+	return true;
+}
+
+bool ModuleRender::CleanUp()
+{
+	SDL_GL_DeleteContext(context);
 	return true;
 }
 
@@ -62,9 +61,32 @@ void ModuleRender::OnResize(int width, int height)
 	glLoadIdentity();
 }
 
-SDL_Window * ModuleRender::GetModuleWindowWindow()
+bool ModuleRender::SetWindow(SDL_Window * window, int width, int height)
 {
-	if (window == nullptr)
-		window = Application::GetInstance()->GetModuleWindow()->window;
-	return window;
+	if (window == nullptr )
+		return false;
+
+	this->window = window;
+	this->width = width;
+	this->height = height;
+
+	if (!CreateContext())
+		return false;
+
+	OnResize(width, height);
+
+	return true;
 }
+
+bool ModuleRender::CreateContext()
+{
+	context = SDL_GL_CreateContext(window);
+
+	if (context == NULL)
+	{
+		LOG("OpenGL context could not be created! SDL_Error: %s\n", SDL_GetError());
+		return false;
+	}
+	return true;
+}
+

@@ -40,6 +40,8 @@ bool Application::Awake()
 		}
 
 	}
+
+	moduleRender->SetWindow(moduleWindow->window, moduleWindow->GetWidth(), moduleWindow->GetHeight());
 	return true;
 }
 

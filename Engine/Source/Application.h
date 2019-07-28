@@ -18,14 +18,7 @@ public:
 	UpdateStatus Update();
 	bool CleanUp();
 
-	static Application* GetInstance(bool enabled = true)
-	{
-		if (_instance == nullptr)
-		{
-			_instance = new Application();
-		}
-		return _instance;
-	}
+
 	ModuleInput* GetModuleInput();
 	ModuleWindow* GetModuleWindow();
 	ModuleRender* GetModuleRender();

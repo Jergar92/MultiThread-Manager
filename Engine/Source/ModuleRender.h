@@ -13,15 +13,19 @@ public:
 
 	bool Awake();
 	bool Render();
-
+	bool CleanUp();
 	void OnResize(int width, int height);
+
+	bool SetWindow(SDL_Window* window, int width, int height);
 private:
 
+	bool CreateContext();
 
-	SDL_Window* GetModuleWindowWindow();
 
 private:
 	SDL_Window* window = nullptr;
+	int width = 0;
+	int height = 0;
 	SDL_GLContext context;
 
 };
