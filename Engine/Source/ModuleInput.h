@@ -17,7 +17,7 @@ class ModuleInput :
 {
 public:
 	ModuleInput(bool enabled = true);
-	virtual ~ModuleInput();
+	~ModuleInput();
 
 	bool Awake();
 	UpdateStatus InputUpdate();

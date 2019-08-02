@@ -37,6 +37,11 @@ UpdateStatus ModuleInput::InputUpdate()
 	SDL_PumpEvents();
 
 	inputController->UpdateInput();
+	SDL_Event e;
+	while (SDL_PollEvent(&e))
+	{
+		inputController->PollEvents(e);
+	}
 	return UpdateStatus::UPDATE_CONTINUE;
 }
 

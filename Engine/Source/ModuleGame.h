@@ -8,7 +8,7 @@ class ModuleGame :	public Module
 {
 public:
 	ModuleGame(bool enabled = true);
-	virtual ~ModuleGame();
+	~ModuleGame();
 
 
 	UpdateStatus GameUpdate();

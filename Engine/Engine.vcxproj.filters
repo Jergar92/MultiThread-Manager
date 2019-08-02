@@ -498,8 +498,11 @@
     <ClInclude Include="Source\InputEnum.h">
       <Filter>Header Files\InputController</Filter>
     </ClInclude>
+    <ClInclude Include="Source\ModuleEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Source\OrbitalCamera.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -630,6 +633,9 @@
       <Filter>Source Files\InputController</Filter>
     </ClCompile>
     <ClCompile Include="Source\OrbitalCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ModuleEditor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

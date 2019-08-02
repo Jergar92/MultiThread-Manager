@@ -48,8 +48,33 @@ void KeyboardController::UpdateInput()
 	}
 }
 
+void KeyboardController::PollEvents(const SDL_Event&  e)
+{
+}
+
 bool KeyboardController::CleanUp()
 {
 	RELEASE(keyboardKeys)
 	return true;
+}
+
+bool KeyboardController::GetKeyDown(int id) const
+{
+	if (id<0 || id>MAX_KEYBOARD_KEYS)
+		return false;
+	return keyboardKeys[id] == KEY_DOWN;
+}
+
+bool KeyboardController::GetKeyRepeat(int id) const
+{
+	if (id<0 || id>MAX_KEYBOARD_KEYS)
+		return false;
+	return keyboardKeys[id] == KEY_REPEAT;
+}
+
+bool KeyboardController::GetKeyUp(int id) const
+{
+	if (id<0 || id>MAX_KEYBOARD_KEYS)
+		return false;
+	return keyboardKeys[id] == KEY_UP;
 }

@@ -8,7 +8,7 @@ class ModuleWindow :public Module
 {
 public:
 	ModuleWindow(bool startEnabled = true);
-	virtual ~ModuleWindow();
+	~ModuleWindow();
 
 	bool Awake();
 	int GetWidth() const;

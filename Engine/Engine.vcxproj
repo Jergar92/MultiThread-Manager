@@ -172,6 +172,7 @@
     <ClInclude Include="Source\InputEnum.h" />
     <ClInclude Include="Source\KeyboardController.h" />
     <ClInclude Include="Source\Module.h" />
+    <ClInclude Include="Source\ModuleEditor.h" />
     <ClInclude Include="Source\ModuleGame.h" />
     <ClInclude Include="Source\ModuleInput.h" />
     <ClInclude Include="Source\ModuleRender.h" />
@@ -217,6 +218,7 @@
     <ClCompile Include="Source\Log.cpp" />
     <ClCompile Include="Source\main.cpp" />
     <ClCompile Include="Source\Module.cpp" />
+    <ClCompile Include="Source\ModuleEditor.cpp" />
     <ClCompile Include="Source\ModuleGame.cpp" />
     <ClCompile Include="Source\ModuleInput.cpp" />
     <ClCompile Include="Source\ModuleRender.cpp" />
